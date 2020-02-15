@@ -16,7 +16,8 @@ body {
 }
 
 .header::after,
-.main::after  {
+.main::after,
+.footer::after  {
     content: '';
     position: absolute;
     top: 0;
@@ -51,6 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 2vh auto;
+    height: 30vh;
 }
 
 .header__item h2,
@@ -73,15 +75,13 @@ a:hover {
 }
 
 .header:hover::after,
-.main:hover::after {
+.main:hover::after,
+.footer:hover::after  {
     opacity: 0.2;
     border-top: 1vh solid #82c2ff;
     border-bottom: 1vh solid #82c2ff;
     transition: all 0.4s ease-in;
 }
-
-
-
 
 .main {
     display: flex;
@@ -123,3 +123,14 @@ a:hover {
     color: #af826c;
     border: 5px solid #aaa5a5; 
 } 
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #545454;
+    height: 17vh;
+}
